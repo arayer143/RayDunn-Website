@@ -18,7 +18,7 @@
 .header {
   padding: 10px 16px;
   background: #555;
-  color: #555;
+  color: white;
 }
 .content {
   padding: 16px;
@@ -32,8 +32,4 @@
 
 .sticky + .content {
   padding-top: 102px;
-}
-
-.h2 {
-  color: white;
 }
