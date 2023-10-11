@@ -1,25 +1,64 @@
-.banner {
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+  font-size: 10px;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+.navbar {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    z-index: 500;
+    background-color: grey;
+
+}
+
+
+.banner{
   width: 100%;
   height: 60vh;
-   background-position: center top;
-  background-size: cover;
-  color: black;
+  background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+  background-position: center top;
+	background-size:cover;
+
 }
 
 .overlay-text{
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
+  top: 30%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: black; 
+  padding: 10px 20px; 
+  font-size: 50px; 
   text-align: center;
-  font-size: 50px;
 }
 .header {
   padding: 10px 16px;
   background: #555;
   color: white;
 }
+
+h1{
+
+}
+
+
 .content {
   padding: 16px;
 }
