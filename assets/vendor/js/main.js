@@ -62,7 +62,7 @@ function navbarLinkClick() {
   /**
    * Navbar links active state on scroll
    */
-  let navbarlinks = select('#navbar .scrollto', true)
+  let navbarlinks = select('.navbar .scrollto', true)
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
     navbarlinks.forEach(navbarlink => {
@@ -134,15 +134,6 @@ function navbarLinkClick() {
     this.classList.toggle('bi-x')
   })
 
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -152,9 +143,9 @@ function navbarLinkClick() {
       e.preventDefault()
 
       let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
+      if (navbar.classList.contains('navbar-brand')) {
+        navbar.classList.remove('navbar-brand')
+        let navbarToggle = select('.navbar-toggle')
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
       }
