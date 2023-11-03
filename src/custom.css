@@ -69,6 +69,22 @@ h6,
   opacity: 1;
 }
 
+#header {
+  height: 70px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  background: rgba(42, 44, 57, 0.9);
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  background: rgba(42, 44, 57, 0.9);
+}
+
 .navbar {
   background-color: #000;
   color: #fff;
@@ -78,10 +94,7 @@ h6,
   line-height: 80px;
   font-size: 18px;
   padding: 0 30px;
-  position: relative;
   top: 0;
-  left: 0;
-  z-index: 999;
 }
 
 .navbar a {
@@ -90,9 +103,6 @@ h6,
 }
 
 .navbar a.navbar-brand {
-  float: left;
-  height: inherit;
-  line-height: inherit;
   padding: 0 30px;
   font-size: 22px;
   text-transform: uppercase;
@@ -114,14 +124,16 @@ h6,
 }
 
 .navbar ul li {
+  align-self: flex-end;
   display: inline-block;
+  position: relative;
 }
 
 .navbar ul li a {
   display: block;
   text-align: center;
   min-width: 120px;
-  padding: 0 3px;
+  padding: 0 35px;
 }
 
 .navbar ul li a:hover {
@@ -150,9 +162,9 @@ h6,
   .navbar ul {
     width: 100%;
     padding: 0;
-    background-color: darkgrey;
+    background-color: rgb(20, 11, 11);
     /* height: auto; */
-    height: 105vh;
+    height: 65vh;
     max-height: 0;
     overflow: hidden;
     transition: all ease-in-out 0.2s;
@@ -200,17 +212,17 @@ h6,
     transform: translateY(5px);
   }
   .navbar .navbar-toggler.open-navbar-toggler span {
-    /* transform: rotate(90deg); */
+    transform: rotate(90deg);
     background-color: transparent;
-    /* transform: scale(0.85) rotate(270deg); */
+    transform: scale(0.85) rotate(270deg);
   }
   .navbar .navbar-toggler.open-navbar-toggler span::before {
     transform: translateY(0px) rotate(45deg);
-    /* transform: translateY(0px) scale(0.75) rotate(45deg); */
+    transform: translateY(0px) scale(0.75) rotate(45deg);
   }
   .navbar .navbar-toggler.open-navbar-toggler span::after {
     transform: translateY(-3px) rotate(-45deg);
-    /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+    transform: translateY(-3px) scale(0.75) rotate(-45deg);
   }
 }
 /*--------------------------------------------------------------
