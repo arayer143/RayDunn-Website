@@ -4,7 +4,7 @@
 
 
 
-$primary: rgb(42, 2, 46);
+$primary: rgb(51, 13, 94) ;
 $secondary: darkgrey;
 
 
@@ -144,6 +144,8 @@ h6 {
   font-size: 18px;
   padding: 0 30px;
   top: 0;
+  overflow: hidden;
+  
  
  
 
@@ -224,13 +226,16 @@ h6 {
 @media (max-width: 767px) {
   .navbar {
     padding: 0;
+    overflow: visible;
   }
   .navbar ul {
-    width: 100%;
+    float: right;
+    width: 80%;
     padding: 0;
     background-color: rgb(20, 11, 11);
     /* height: auto; */
     height: 65vh;
+
     max-height: 0;
     overflow: hidden;
     transition: all ease-in-out 0.2s;
@@ -310,7 +315,7 @@ h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, rgb(42, 44, 57) 0%, rgb(51, 54, 74) 100%);
+  background: linear-gradient(0deg, rgb(76, 24, 136) 0%, rgb(51, 54, 74) 100%);
   padding: 0;
 }
 
