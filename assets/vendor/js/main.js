@@ -35,34 +35,10 @@
     el.addEventListener('scroll', listener)
   }
 
-
-
-
-  const navbarToggler = document.querySelector(".navbar-toggler");
-const navbarMenu = document.querySelector(".navbar ul");
-const navbarLinks = document.querySelectorAll(".navbar a");
-
-navbarToggler.addEventListener("click", navbarTogglerClick);
-
-function navbarTogglerClick() {
-  navbarToggler.classList.toggle("open-navbar-toggler");
-  navbarMenu.classList.toggle("open");
-}
-
-navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
-
-function navbarLinkClick() {
-  if(navbarMenu.classList.contains("open")) {
-    navbarToggler.click();
-  }
-}
-
-
-
   /**
    * Navbar links active state on scroll
    */
-  let navbarlinks = select('.navbar .scrollto', true)
+  let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
     navbarlinks.forEach(navbarlink => {
@@ -134,6 +110,15 @@ function navbarLinkClick() {
     this.classList.toggle('bi-x')
   })
 
+  /**
+   * Mobile nav dropdowns activate
+   */
+  on('click', '.navbar .dropdown > a', function(e) {
+    if (select('#navbar').classList.contains('navbar-mobile')) {
+      e.preventDefault()
+      this.nextElementSibling.classList.toggle('dropdown-active')
+    }
+  }, true)
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -143,9 +128,9 @@ function navbarLinkClick() {
       e.preventDefault()
 
       let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-brand')) {
-        navbar.classList.remove('navbar-brand')
-        let navbarToggle = select('.navbar-toggle')
+      if (navbar.classList.contains('navbar-mobile')) {
+        navbar.classList.remove('navbar-mobile')
+        let navbarToggle = select('.mobile-nav-toggle')
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
       }
@@ -218,7 +203,34 @@ function navbarLinkClick() {
     }
   });
 
+  /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
 
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
+  });
 
   /**
    * Animation on scroll
@@ -231,28 +243,5 @@ function navbarLinkClick() {
       mirror: false
     })
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 })()
