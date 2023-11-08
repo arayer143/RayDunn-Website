@@ -71,7 +71,11 @@ h6 {
 
 
 
+h1{
+  text-decoration: underline rgb(88, 5, 88);
+  text-underline-offset: 0.7rem;
 
+}
 
 
 
@@ -667,7 +671,7 @@ section {
 /* start of our services section */
 
 #our-services {
-  background: #f6f6f6;
+  background: #1d2a6150;
   min-height: 100vh;
   padding-top: 25vh;
 }
@@ -715,10 +719,25 @@ section {
   margin-bottom: 7px;
 }
 
+
+.services-text p{
+  font-weight: 400;
+}
+
+
+
+
+
 #our-services .services .column .service:hover {
   background: #28282e;
   color: #fff;
-}
+
+    animation-name:ShineAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
 
 #our-services .services .column .service:hover .service-icon {
   color: #fff;
