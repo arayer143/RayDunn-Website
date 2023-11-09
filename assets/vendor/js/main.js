@@ -248,13 +248,13 @@
 
   
 
-  var rn = Math.floor((Math.random() * 150) + 60);
-  var rs = Math.floor((Math.random() * 11) + 4);
+ 
+  var rs = Math.floor((Math.random));
     var t = new Trianglify({
-   x_gradient: Trianglify.colorbrewer.Spectral[rs],
+   gradient: Trianglify,
    width: 1300,
-   height: 600,
-      noiseIntensity: 0,
+   height: 13000,
+    noiseIntensity: 0,
       cellsize: 60
   });
   var pattern = t.generate(window.innerWidth, window.innerWidth+400);

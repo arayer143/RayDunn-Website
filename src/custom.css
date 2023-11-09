@@ -518,6 +518,15 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+.heading h1:after, .heading .h1:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 2px;
+  background: #BABABA;
+  margin-top: 4px;
+}
+
 .clear-fix {
   clear: both;
 }
@@ -528,10 +537,6 @@ section {
 
 /* end global */
 /* start of our services section */
-#our-services {
-  height: 700px;
-}
-
 /* OUR SEERVICES LEFT SIDE */
 #our-services .desc {
   width: 33%;
