@@ -257,7 +257,7 @@
     noiseIntensity: 0,
       cellsize: 60
   });
-  var pattern = t.generate(window.innerWidth, window.innerWidth+400);
+  var pattern = t.generate(window.innerWidth, window.innerWidth+600);
   document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
 
 
