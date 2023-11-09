@@ -528,7 +528,7 @@ section {
 }
 
 .clear-fix {
-  clear: both;
+  clear: clear;
 }
 
 .hidden {
@@ -546,7 +546,6 @@ section {
 #our-services .desc .heading h1, #our-services .desc .heading .h1 {
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 1.4px;
 }
 
 #our-services .desc .text {
