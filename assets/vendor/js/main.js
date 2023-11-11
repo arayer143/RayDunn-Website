@@ -144,6 +144,13 @@
 
 
 
+
+
+
+
+
+
+
   
 
 
@@ -228,6 +235,28 @@ jQuery(document).ready(function($){
 //         }
 //     })
 // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+TweenMax.from('#icon', 1, {scale:2, rotation:180, ease:Back.easeOut.config(5)})
+TweenMax.from('#hed1', .5, {delay:3, alpha:0})
+TweenMax.from('#photo',3, {delay:1.5, top:'-=600', left:'+=800', ease:'Quad.easeOut', })
+TweenMax.to('#hed1', .3, {delay:4,})
+TweenMax.to('#icon', 1, {delay:2, x:'+=100', y:'-=5', width:'90px'}, 3)
+TweenMax.from('#hed2', 1.5, {delay:5, alpha:0, top:'+=40', ease:'Back.easeOut'})
+
+
+
 
 
 
