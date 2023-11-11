@@ -458,7 +458,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .about .content h3, .about .content .h3 {
@@ -537,6 +537,10 @@ section {
 
 /* end global */
 /* start of our services section */
+#our-services {
+  background: whitesmoke;
+}
+
 /* OUR SEERVICES LEFT SIDE */
 #our-services .desc {
   width: 33%;
@@ -571,7 +575,7 @@ section {
   align-items: center;
   width: 120px;
   height: 120px;
-  background: #FFFFFF;
+  background: white;
   transition: all 0.1s ease;
   margin-bottom: 7px;
 }
@@ -583,10 +587,6 @@ section {
 #our-services .services .column .service:hover {
   background: #28282e;
   color: #fff;
-  animation-name: ShineAnimation;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 #our-services .services .column .service:hover .service-icon {
@@ -612,20 +612,38 @@ section {
 /* media query */
 @media all and (max-width: 967px) {
   #our-services .desc {
+    text-align: center;
+  }
+  #our-services .desc {
     width: 100%;
-    float: none;
     margin-bottom: 30px;
   }
   #our-services .services {
     width: 100%;
-    text-align: center;
+    margin-left: 14rem;
   }
   #our-services .services .column {
     transform: rotate(0deg);
-    margin-right: 5px;
+    margin-right: 15px;
+    text-align: center;
   }
   #our-services .services .column .service .service-desc {
     transform: rotate(0deg);
+  }
+}
+@media all and (max-width: 867px) {
+  #our-services .services {
+    margin-left: 7rem;
+  }
+}
+@media all and (max-width: 467px) {
+  #our-services .services {
+    margin-left: 4rem;
+  }
+}
+@media all and (max-width: 380px) {
+  #our-services .services {
+    margin-left: 3rem;
   }
 }
 /*--------------------------------------------------------------

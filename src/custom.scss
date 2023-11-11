@@ -474,6 +474,7 @@ background: linear-gradient(-45deg, #5c52ee, rgb(51, 54, 74), #0d4255, #0d4a91);
 
 .hero-waves {
   display: block;
+
   width: 100%;
   height: 60px;
   position: relative;
@@ -585,7 +586,7 @@ section {
 
 .about {
  
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .about .content h3 {
@@ -672,7 +673,7 @@ section {
 /* start of our services section */
 
 #our-services {
- 
+background: whitesmoke;
   
 
 }
@@ -715,7 +716,7 @@ section {
   align-items: center;
   width: 120px;
   height: 120px;
-  background: #FFFFFF;
+  background: white;
   transition: all 0.1s ease;
   margin-bottom: 7px;
 }
@@ -733,10 +734,7 @@ section {
   background: #28282e;
   color: #fff;
 
-    animation-name:ShineAnimation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+
   }
 
 
@@ -768,21 +766,28 @@ section {
     
     
   }
+  #our-services .desc{
+    text-align: center;
+  }
   
   #our-services .desc {
       width: 100%;
-      float: none;
+    
       margin-bottom: 30px;
   }
   
   #our-services .services {
       width: 100%;
-      text-align: center;
+      margin-left: 14rem;
+   
+     
+   
   }
   
   #our-services .services .column {
       transform: rotate(0deg);
-      margin-right: 5px;
+      margin-right: 15px;
+      text-align: center;
   }
   
   #our-services .services .column .service .service-desc {
@@ -790,6 +795,45 @@ section {
   }
 }
 
+
+
+
+@media all and (max-width: 867px){
+
+  #our-services .services {
+  
+    margin-left: 7rem;
+ 
+   
+ 
+}
+
+}
+
+
+@media all and (max-width: 467px){
+
+  #our-services .services {
+  
+    margin-left: 4rem;
+ 
+   
+ 
+}
+
+}
+
+@media all and (max-width: 380px){
+
+  #our-services .services {
+  
+    margin-left: 3rem;
+ 
+   
+ 
+}
+
+}
 
 
 /*--------------------------------------------------------------

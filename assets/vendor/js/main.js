@@ -186,22 +186,7 @@
     selector: '.portfolio-lightbox'
   });
 
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+
 
   /**
    * Testimonials slider
@@ -237,7 +222,7 @@
    */
   window.addEventListener('load', () => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       easing: 'ease-in-out',
       once: true,
       mirror: false
@@ -248,17 +233,7 @@
 
   
 
- 
-  var rs = Math.floor((Math.random));
-    var t = new Trianglify({
-   gradient: Trianglify,
-   width: 1300,
-   height: 13000,
-    noiseIntensity: 0,
-      cellsize: 60
-  });
-  var pattern = t.generate(window.innerWidth, window.innerWidth+600);
-  document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
+
 
 
 
