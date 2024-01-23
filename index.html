@@ -25,7 +25,6 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -41,73 +40,54 @@
 </head>
 
 <body>
-  <header class="fixed-top d-flex align-items-center header-transparent ">
-  <nav class="navbar bg-primary">
- 
-    
-    <a href="#" class="navbar-brand"><span>R</span>ay<span>D</span>unn</a>
-
- 
-
-
-<ul>
-      <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">JavaScript</a></li>
-    </ul>
-
-<ul>
-  
-</ul>
-
-    <button class="navbar-toggler">
-      <span></span>
+  <header>
+  <nav class="navbar navbar-expand-custom navbar-mainbg bg-primary">
+    <a class="navbar-brand navbar-logo" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
     </button>
-
-  </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Address Book</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Components</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Charts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 </header>
 
 
-
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-end align-items-center mt-4">
-    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center ">
+    <div class="container">  <h1 id="hed1">Huge for developers.</h1></div>
+  
 
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Selecao</span></h2>
-          <p class="animate__animated fanimate__adeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-        </div>
+
+    <div class="header-img absolute-center crop">
+      <img id="photo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1412/iphone.jpg"/>
+    
+      <img id="icon" class="absolute-center" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1412/icon_1.png"/>
+    
+    
+      <h1 id="hed2">RayDunn Designs<h1>
+     
       </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-      </a>
 
     </div>
 
@@ -175,15 +155,17 @@
 
     <!-- ======= Features Section ======= -->
     <section id="our-services">
-      <div class="container ">
+      <div class="container ml-3">
         <div class="desc">
-          <div class="heading">
+          <div class="service-heading">
             <h1>Our Services</h1>
+
           </div>
-          <div class="text">
-            <p>WHAT WE OFFER </p>
+          <div class="services-text">
+            <p>We are a Web Development Company  </p>
           </div>
         </div>
+
         <div class="services">
     
           
@@ -194,7 +176,7 @@
     
                 </i>
                 <p class="service-txt">
-                  LIGHT DUTY TOWING & RECOVERY
+                  Web Development
                 </p>                       
               </div>
             </div>
@@ -204,7 +186,7 @@
     
                 </i>
                 <p class="service-txt">
-                 WINCH OUTS
+                 Search Engine Optimization (SEO)
                 </p>
               </div>
             </div>
@@ -214,7 +196,7 @@
     
                 </i>
                 <p class="service-txt">
-                ROADSIDE ASSISTANCE
+                Domain Hosting 
                 </p>
               </div>
             </div>
@@ -227,7 +209,7 @@
     
                 </i>
                 <p class="service-txt">
-                  MEDIUM DUTY TOWING & RECOVERY
+                  UI/UX User Experience
                 </p>
               </div>
             </div>
@@ -253,45 +235,14 @@
             </div>
           </div>
     
-          <div class="column" id="column-2">
-            <div class="service">
-              <div class="service-desc">
-                <i class="service-icon fas fa-tasks">
-    
-                </i>
-                <p class="service-txt">
-                 HEAVY DUTY TOWING & TRANSPORT
-                </p>                            
-              </div>
-            </div>
-            <div class="service">
-              <div class="service-desc">
-                <i class="service-icon fas fa-certificate">
-    
-                </i>
-                <p class="service-txt">
-                  ROTATOR & RECOVERY
-                </p>
-              </div>
-            </div>
-            <div class="service ">
-              <div class="service-desc">
-                <i class="service-icon">
-    
-                </i>
-                <p class="service-txt">
-    specialized transport
-                </p>
-              </div>
-            </div>
-          </div>
+     
           
       
           
           
           
         </div>
-        <div class="clear-fix"></div>
+       
       </div>
       
     </section><!-- End Features Section -->
@@ -313,68 +264,11 @@
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
 
-        <div class="section-title" data-aos="zoom-out">
-          <h2>Services</h2>
-          <p>What we do offer</p>
-        </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box" data-aos="zoom-in-left">
-              <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
-              <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-5">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300">
-              <div class="icon"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-5">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400">
-              <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-5">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500">
-              <div class="icon"><i class="bi bi-clock" style="color: #4680ff;"></i></div>
-              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
+     <!-- ======= Portfolio Section ======= -->
+     <section id="portfolio" class="portfolio ">
+      <div class="container mb-3">
 
         <div class="section-title" data-aos="zoom-out">
           <h2>Portfolio</h2>
@@ -484,6 +378,12 @@
 
       </div>
     </section><!-- End Portfolio Section -->
+
+
+
+
+   
+   
 
 
    
@@ -649,7 +549,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Selecao</h3>
+      <h3>RayDunn Web Designs</h3>
       <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -682,9 +582,12 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="node_modules/@popperjs/core/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="node_modules\@popperjs\core\dist\umd\popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.1.5/trianglify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 
-
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="assets/vendor/js/main.js"></script>
 
 </body>

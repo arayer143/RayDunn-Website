@@ -55,35 +55,9 @@
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
 
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
 
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
-   */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-      }
-    }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
+
 
   /**
    * Back to top button
@@ -101,42 +75,8 @@
     onscroll(document, toggleBacktotop)
   }
 
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+  
 
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
-
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
 
   /**
    * Scroll with ofset on page load with hash links in the url
@@ -186,58 +126,16 @@
     selector: '.portfolio-lightbox'
   });
 
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
 
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
 
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  });
+  
 
   /**
    * Animation on scroll
    */
   window.addEventListener('load', () => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       easing: 'ease-in-out',
       once: true,
       mirror: false
@@ -246,18 +144,118 @@
 
 
 
+
+
+
+
+
+
+
   
 
 
-  var heading = $('#our-services .desc .heading h1'),
-  txt = $('#our-services .desc .text'),
-  serviceItem = $('#our-services .services .column .service'),
-  tl = new TimelineLite();
 
-tl
-  .from(heading, 0.3, {opacity : 0, y : -20}, '+=0.3')
-  .from(txt, 0.3, {opacity : 0, y : -20})
-  .staggerFrom(serviceItem, 0.2, {x : -10, autoAlpha : 0}, 0.1);
+
+
+  // ---------Responsive-navbar-active-animation-----------
+function test(){
+	var tabsNewAnim = $('#navbarSupportedContent');
+	var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+	var activeItemNewAnim = tabsNewAnim.find('.active');
+	var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+	var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+	var itemPosNewAnimTop = activeItemNewAnim.position();
+	var itemPosNewAnimLeft = activeItemNewAnim.position();
+	$(".hori-selector").css({
+		"top":itemPosNewAnimTop.top + "px", 
+		"left":itemPosNewAnimLeft.left + "px",
+		"height": activeWidthNewAnimHeight + "px",
+		"width": activeWidthNewAnimWidth + "px"
+	});
+	$("#navbarSupportedContent").on("click","li",function(e){
+		$('#navbarSupportedContent ul li').removeClass("active");
+		$(this).addClass('active');
+		var activeWidthNewAnimHeight = $(this).innerHeight();
+		var activeWidthNewAnimWidth = $(this).innerWidth();
+		var itemPosNewAnimTop = $(this).position();
+		var itemPosNewAnimLeft = $(this).position();
+		$(".hori-selector").css({
+			"top":itemPosNewAnimTop.top + "px", 
+			"left":itemPosNewAnimLeft.left + "px",
+			"height": activeWidthNewAnimHeight + "px",
+			"width": activeWidthNewAnimWidth + "px"
+		});
+	});
+}
+$(document).ready(function(){
+	setTimeout(function(){ test(); });
+});
+$(window).on('resize', function(){
+	setTimeout(function(){ test(); }, 500);
+});
+$(".navbar-toggler").click(function(){
+	$(".navbar-collapse").slideToggle(300);
+	setTimeout(function(){ test(); });
+});
+
+
+
+// --------------add active class-on another-page move----------
+jQuery(document).ready(function($){
+	// Get current path and find target link
+	var path = window.location.pathname.split("/").pop();
+
+	// Account for home page with empty path
+	if ( path == '' ) {
+		path = 'index.html';
+	}
+
+	var target = $('#navbarSupportedContent ul li a[href="'+path+'"]');
+	// Add active class to target link
+	target.parent().addClass('active');
+});
+
+
+
+
+// Add active class on another page linked
+// ==========================================
+// $(window).on('load',function () {
+//     var current = location.pathname;
+//     console.log(current);
+//     $('#navbarSupportedContent ul li a').each(function(){
+//         var $this = $(this);
+//         // if the current path is like this link, make it active
+//         if($this.attr('href').indexOf(current) !== -1){
+//             $this.parent().addClass('active');
+//             $this.parents('.menu-submenu').addClass('show-dropdown');
+//             $this.parents('.menu-submenu').parent().addClass('active');
+//         }else{
+//             $this.parent().removeClass('active');
+//         }
+//     })
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+TweenMax.from('#icon', 1, {scale:2, rotation:180, ease:Back.easeOut.config(5)})
+TweenMax.from('#hed1', .5, {delay:3, alpha:0})
+TweenMax.from('#photo',3, {delay:1.5, top:'-=600', left:'+=800', ease:'Quad.easeOut', })
+TweenMax.to('#hed1', .3, {delay:4,})
+TweenMax.to('#icon', 1, {delay:2, x:'+=100', y:'-=5', width:'90px'}, 3)
+TweenMax.from('#hed2', 1.5, {delay:5, alpha:0, top:'+=40', ease:'Back.easeOut'})
+
+
 
 
 
