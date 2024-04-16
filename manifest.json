@@ -1,0 +1,41 @@
+{
+    "name": "RayDunn Web Solutions", 
+    "short_name": "RayDunn",
+    "start_url": "/index.html",
+    "description": "RayDunn Web Solutions Website",
+    "display": "standalone",
+    "background-color": "#444444",
+    "theme_color": "#d4af37",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "assets/img/RayDunn-logo-noBG.webp",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "assets/img/RayDunn-logo-noBG.webp",
+            "type": "image/png",
+            "sizes": "192x192"
+          },
+
+        {
+            "src": "assets/img/RayDunn-logo-noBG.webp",
+            "type": "image/png",
+            "sizes": "512x512"
+          }
+    ],
+
+    "screenshots" : [
+        {
+          "src": "assets/img/RayDunn-logo-noBG.webp",
+          "sizes": "2500x1500",
+          "type": "image/png",
+          "form_factor": "wide",
+      
+          "label": "RayDunn Web Solutions Icon"
+        }
+
+    ]
+    
+}
