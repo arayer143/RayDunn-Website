@@ -38,6 +38,7 @@
     margin: 10px 0 0 0;
     color: $white;
     background: $primary;
+    margin-right: 1rem;
     &:hover {
       background: darken($primary, 10);
     }
@@ -92,6 +93,7 @@
 
     .btn-get-started {
       font-size: 16px;
+    
       padding: 10px 24px 11px 24px;
     }
      
