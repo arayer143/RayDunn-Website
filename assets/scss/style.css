@@ -305,6 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .btn-get-started {
   font-family: "Jost", sans-serif;
+  margin-left: 1rem;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -318,25 +319,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .btn-get-started:hover {
   background: #b29126;
-}
-#hero .btn-watch-video {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  transition: 0.5s;
-  margin: 10px 0 0 25px;
-  color: #fff;
-  line-height: 1;
-}
-#hero .btn-watch-video i {
-  line-height: 0;
-  color: #fff;
-  font-size: 32px;
-  transition: 0.3s;
-  margin-right: 8px;
-}
-#hero .btn-watch-video:hover i {
-  color: #d4af37;
 }
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -445,7 +427,7 @@ section {
   text-align: center;
 }
 .clients img {
-  max-width: 45%;
+  max-width: 50%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
