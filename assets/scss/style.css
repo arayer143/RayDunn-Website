@@ -789,7 +789,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(31, 31, 31, 0.9), rgba(31, 31, 31, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(31, 31, 31, 0.9), rgba(31, 31, 31, 0.9)), url("assets/img/raydunnlogoheadert.webp") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
