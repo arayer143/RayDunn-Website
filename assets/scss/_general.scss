@@ -58,3 +58,92 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 }
+
+
+
+.rounded-social-buttons {
+  text-align: center;
+  display: flex;
+justify-content:center ;
+margin-top: 3rem;
+
+
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-decoration: none;
+  color: #fefefe;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 50%;
+  transition: all 0.10 ease;
+  margin-bottom: -15px;
+  margin-right: 4px;
+  margin-left: 5px;
+
+  
+
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  animation: bounce 0.4s cubic-bezier(0.59, -0.67, 0.24, 0.79) 2;
+  animation-direction: alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+
+
+.rounded-social-buttons .fa-tiktok, .fa-facebook-f, .fa-linkedin, .fa-yelp, .fa-instagram {
+  font-size: 25px;
+ margin-top: 7px;
+ 
+
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+
+
+.rounded-social-buttons .social-button.tiktok {
+  background: black;
+  filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4)
+}
+
+
+
+
+.rounded-social-buttons .social-button.yelp {
+  background: #bb0000;
+}
+
+
+
+.rounded-social-buttons .social-button.instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #0077b5 ;
+}
+
+
+

@@ -79,7 +79,14 @@ section {
 # About Us
 --------------------------------------------------------------*/
 .about {
+
+  p{
+    text-align: center;
+  }
+
   .content {
+ 
+
     h3 {
       font-weight: 600;
       font-size: 26px;
@@ -110,6 +117,7 @@ section {
 
     p:last-child {
       margin-bottom: 0;
+ 
     }
 
     .btn-learn-more {

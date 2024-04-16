@@ -1,185 +1,96 @@
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
+.footer {
+  color: #fff;
+
+  background-size: cover;
   font-size: 14px;
-  background: $secondary;
+  padding: 5rem;
+  position: relative;
+  background: linear-gradient(45deg, #bab6df,  40% #d4af37);
 
-  .footer-newsletter {
-    padding: 50px 0;
-    background: lighten($secondary, 61);
-    text-align: center;
-    font-size: 15px;
-    color: $default;
+}
 
-    h4 {
-      font-size: 24px;
-      margin: 0 0 20px 0;
-      padding: 0;
-      line-height: 1;
-      font-weight: 600;
-      color: $secondary;
-    }
 
-    form {
-      margin-top: 30px;
-      background: #fff;
-      padding: 6px 10px;
-      position: relative;
-      border-radius: 50px;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
-      text-align: left;
 
-      input[type="email"] {
-        border: 0;
-        padding: 4px 8px;
-        width: calc(100% - 100px);
-      }
 
-      input[type="submit"] {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        border: 0;
-        background: none;
-        font-size: 16px;
-        padding: 0 20px;
-        background: $primary;
-        color: $white;
-        transition: 0.3s;
-        border-radius: 50px;
-        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
-        &:hover {
-          background: darken($primary, 10);
-        }
-      }
-    }
-  }
+.footer:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  inset: 0;
+}
 
-  .footer-top {
-    padding: 60px 0 30px 0;
-    background: $white;
+.footer .footer-content .footer-info {
+  margin-bottom: 30px;
+  text-align: center;
+  
+}
 
-    .footer-contact {
-      h3 {
-        font-size: 28px;
-        margin: 0 0 10px 0;
-        padding: 2px 0 2px 0;
-        line-height: 1;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: $secondary;
-      }
 
-      p {
-        font-size: 14px;
-        line-height: 24px;
-        margin-bottom: 0;
-        font-family: $font-primary;
-        color: lighten($default, 10);
-      }
-      margin-bottom: 30px;
-    }
 
-    h4 {
-      font-size: 16px;
-      font-weight: bold;
-      color: $secondary;
-      position: relative;
-      padding-bottom: 12px;
-    }
+.footer .footer-content .footer-info img{
+  max-height: 30%;
+  max-width: 30%;
 
-    .footer-links {
-      margin-bottom: 30px;
-      ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
 
-        i {
-          padding-right: 2px;
-          color: $primary;
-          font-size: 18px;
-          line-height: 1;
-        }
+}
 
-        li {
-          padding: 10px 0;
-          &:first-child {
-            padding-top: 0;
-          }
-          display: flex;
-          align-items: center;
-        }
+.footer .footer-content .footer-info h3 {
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-        a {
-          color: lighten($default, 20);
-          transition: 0.3s;
-          display: inline-block;
-          line-height: 1;
-          &:hover {
-            text-decoration: none;
-            color: $primary;
-          }
-        }
-      }
-    }
+.footer .footer-content .footer-info h3 span {
+  color: var(--color-primary);
+}
 
-    .social-links {
-      a {
-        font-size: 18px;
-        display: inline-block;
-        background: $primary;
-        color: $white;
-        line-height: 1;
-        padding: 8px 0;
-        margin-right: 4px;
-        border-radius: 50%;
-        text-align: center;
-        width: 36px;
-        height: 36px;
-        transition: 0.3s;
-        &:hover {
-          background: darken($primary, 10);
-          color: #fff;
-          text-decoration: none;
-        }
-      }
-    }
+.footer .footer-content .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: var(--font-primary);
+  color: #fff;
+}
 
-  }
+.footer .footer-content .social-links {
+  text-align: center;
+  align-items: center;
+  
+}
 
-  .footer-bottom {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: $white;
-  }
+.footer .footer-content .social-links a {
+  font-size: 18px;
+  display: infline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  justify-content: center;
+}
 
-  .copyright {
-    float: left;
-  }
+.footer .footer-content .social-links a:hover {
+  background: var(--color-primary);
+  text-decoration: none;
+}
 
-  .credits {
-    float: right;
-    font-size: 13px;
-    a {
-      transition: 0.3s;
-    }
-  }
 
-  @media (max-width: 768px) {
-    .footer-bottom {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-    .copyright, .credits {
-      text-align: center;
-      float: none;
-    }
 
-    .credits {
-      padding-top: 4px;
-    }
-  }
+.footer .footer-legal .credits {
+  padding-top: 2px;
+  font-size: 13px;
+  color: white;
+}
+
+.footer .footer-legal .credits a {
+  color: #d4af37;
 }
