@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -961,6 +963,426 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+@media (max-width: 991.98px) {
+	section.section-sm:first-of-type,
+	section.section-md:first-of-type,
+	section.section-lg:first-of-type,
+	section.section-xl:first-of-type,
+	section.section-xxl:first-of-type {
+		padding-top: 40px;
+	}
+}
+
+
+
+/*
+ * Owl Carousel
+ */
+ .owl-carousel {
+	display: none;
+
+	-webkit-tap-highlight-color: transparent;
+	/* position relative and z-index fix webkit rendering fonts issue */
+	position: relative;
+	z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+	position: relative;
+	-ms-touch-action: pan-Y;
+	touch-action: manipulation;
+	-moz-backface-visibility: hidden;
+	/* fix firefox animation glitch */
+}
+
+.owl-carousel .owl-stage:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+	position: relative;
+	overflow: hidden;
+	/* fix for flashing background */
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+	backface-visibility: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+.owl-carousel .owl-item {
+	position: relative;
+	min-height: 1px;
+	float: left;
+	backface-visibility: hidden;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-item img {
+	display: block;
+	max-width: 100%;
+}
+
+.owl-carousel .owl-nav,
+.owl-carousel .owl-dots {
+	-webkit-tap-highlight-color: transparent;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+	display: none;
+}
+
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next,
+.owl-carousel .owl-dot {
+	cursor: pointer;
+	user-select: none;
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+}
+
+.owl-carousel.owl-loaded {
+	display: block;
+}
+
+.owl-carousel.owl-loading {
+	opacity: 0;
+	display: block;
+}
+
+.owl-carousel.owl-hidden {
+	opacity: 0;
+}
+
+.owl-carousel.owl-refresh .owl-item {
+	visibility: hidden;
+}
+
+.owl-carousel.owl-drag .owl-item {
+	touch-action: pan-y;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.owl-carousel.owl-grab {
+	cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+	direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+	float: right;
+}
+
+.owl-carousel .owl-nav {
+	pointer-events: none;
+}
+
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+	font-size: 40px;
+	line-height: 1;
+	cursor: pointer;
+	pointer-events: auto;
+	background: #505cfd;
+	color: #151515;
+}
+
+.owl-carousel .owl-prev::before, .owl-carousel .owl-prev::after,
+.owl-carousel .owl-next::before,
+.owl-carousel .owl-next::after {
+	display: block;
+	font-family: "FontAwesome";
+}
+
+.owl-carousel .owl-prev:hover,
+.owl-carousel .owl-next:hover {
+	text-decoration: none;
+	background: #151515;
+	color: #505cfd;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+	opacity: .5;
+	cursor: default;
+}
+
+.owl-carousel .owl-prev {
+	left: 10px;
+}
+
+.owl-carousel .owl-prev::before {
+	content: '\f104';
+}
+
+.owl-carousel .owl-next {
+	right: 10px;
+}
+
+.owl-carousel .owl-next::before {
+	content: '\f105';
+}
+
+.owl-carousel .owl-dots {
+	text-align: center;
+}
+
+.owl-carousel .owl-dot {
+	display: inline-block;
+	zoom: 1;
+	margin: 0 5px;
+}
+
+.owl-carousel .owl-dot span {
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	display: block;
+	-webkit-backface-visibility: visible;
+	transition: opacity 200ms ease;
+	border-radius: 5px;
+	border: 1px solid #888888;
+}
+
+.owl-carousel .owl-dot.active span, .owl-carousel .owl-dot:hover span {
+	background: #505cfd;
+	border-color: #505cfd;
+}
+
+.test {
+	counter-reset: button;
+	text-align: left;
+	margin-bottom: 50px;
+}
+
+.test .owl-dot {
+	position: relative;
+}
+
+.test .owl-dot:before {
+	position: absolute;
+	content: counter(button, decimal) ".";
+	counter-increment: button;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 15px;
+	color: #b7b7b7;
+}
+
+.test .owl-dot + .owl-dot {
+	margin-left: 10px;
+}
+
+.review-carousel .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (min-width: 992px) {
+	.review-carousel .item {
+		flex-direction: row;
+	}
+	.review-carousel .item-preview {
+		margin-top: 0;
+		margin-right: 60px;
+		align-self: flex-start;
+	}
+}
+
+@media (min-width: 992px) {
+	.review-carousel .item {
+		padding-right: 120px;
+	}
+}
+
+.review-carousel .item-preview {
+	min-width: 216px;
+	max-width: 216px;
+	height: 216px;
+	margin-top: 30px;
+	background-color: #ffffff;
+	padding: 10px;
+	border-radius: 50%;
+	align-self: center;
+}
+
+.review-carousel .item-preview img {
+	border-radius: 50%;
+}
+
+.review-carousel .item-description {
+	overflow: hidden;
+}
+
+.review-carousel .item-description p {
+	margin-top: 50px;
+	font-size: 18px;
+}
+
+.review-carousel .item-description .item-subsection {
+	margin-top: 35px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+@media (min-width: 1200px) {
+	.review-carousel .item-description .item-subsection {
+		padding-left: 90px;
+	}
+}
+
+.review-carousel .item-description .item-subsection .devider-left:after {
+	left: -420px;
+}
+
+.review-carousel .item-description .item-subsection-title {
+	position: relative;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	color: #404044;
+	font-size: 18px;
+}
+
+.review-carousel .item-description .item-subsection-title:before {
+	content: '';
+	position: absolute;
+	left: -220px;
+	height: 3px;
+	top: 50%;
+	transform: translateX(-50%);
+}
+
+.review-carousel .owl-dots {
+	margin-top: 30px;
+}
+
+@media (min-width: 1200px) {
+	.review-carousel .owl-dots {
+		position: absolute;
+		right: -30px;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		flex-direction: column;
+		margin-top: -16px;
+		counter-reset: button;
+		transition: all ease .35s;
+	}
+	.review-carousel .owl-dots > * {
+		margin-top: 16px;
+		position: relative;
+		counter-increment: button;
+		transition: all ease .35s;
+	}
+	.review-carousel .owl-dots .owl-dot {
+		transition: all ease .35s;
+	}
+	.review-carousel .owl-dots .active {
+		padding-bottom: 83px;
+		transition: all ease .35s;
+	}
+	.review-carousel .owl-dots .active:before {
+		font-size: 18px;
+		color: #505cfd;
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		position: absolute;
+		content: "0" counter(button) " ";
+		top: -4px;
+		right: -35px;
+		line-height: 1;
+	}
+	.review-carousel .owl-dots .active:after {
+		content: '';
+		width: 3px;
+		background-color: #505cfd;
+		height: 67px;
+		top: 21px;
+		left: 50%;
+		display: block;
+		position: absolute;
+		transform: translateX(-50%);
+		transition: all ease .35s;
+	}
+}
+
+.owl-brand .owl-dots {
+	margin-top: 20px;
+}
+
+.owl-brand .item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+	transition: all ease .35s;
+	cursor: pointer;
+}
+
+.owl-brand .item:hover {
+	transition: all ease .35s;
+	opacity: .7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Team
