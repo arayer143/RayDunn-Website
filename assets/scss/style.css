@@ -758,6 +758,7 @@ section {
 }
 .services .icon-box .icon {
   margin-bottom: 10px;
+  text-align: center;
 }
 .services .icon-box .icon i {
   color: #d4af37;
@@ -768,6 +769,7 @@ section {
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 24px;
+  text-align: center;
 }
 .services .icon-box h4 a {
   color: rgb(56, 56, 56);
@@ -777,6 +779,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  text-align: center;
 }
 .services .icon-box:hover {
   transform: translateY(-10px);
@@ -861,7 +864,6 @@ section {
 }
 .portfolio .portfolio-item .portfolio-img {
   overflow: hidden;
-  padding: 2rem;
   transition: all 0.6s;
 }
 .portfolio .portfolio-info {
@@ -1014,7 +1016,6 @@ section {
 .owl-carousel .owl-stage {
   position: relative;
   touch-action: manipulation;
-  -moz-backface-visibility: hidden;
   /* fix firefox animation glitch */
 }
 
@@ -1188,7 +1189,6 @@ section {
   height: 10px;
   background: transparent;
   display: block;
-  -webkit-backface-visibility: visible;
   transition: opacity 200ms ease;
   border-radius: 5px;
   border: 1px solid #888888;

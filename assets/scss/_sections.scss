@@ -342,9 +342,11 @@ section {
     padding: 50px 30px;
     transition: all ease-in-out 0.4s;
     background: $white;
+    
 
     .icon {
       margin-bottom: 10px;
+      text-align: center;
 
       i {
         color: $primary;
@@ -358,6 +360,7 @@ section {
       font-weight: 500;
       margin-bottom: 15px;
       font-size: 24px;
+      text-align: center;
       a {
         color: $secondary;
         transition: ease-in-out 0.3s;
@@ -369,6 +372,7 @@ section {
       line-height: 24px;
       font-size: 14px;
       margin-bottom: 0;
+      text-align: center;
     }
 
     &:hover {
@@ -434,6 +438,8 @@ section {
 --------------------------------------------------------------*/
 .portfolio {
 
+
+
   #portfolio-flters {
     list-style:none;
     margin-bottom: 20px;
@@ -457,15 +463,23 @@ section {
         color: $white;
       }
     }
+
+
+
+
   }
 
   .portfolio-item {
     margin-bottom: 30px;
     max-width: 40%;
+
+
+
     
     .portfolio-img {
       overflow: hidden;
-      padding: 2rem;
+
+ 
    
       transition: all 0.6s;
       }
