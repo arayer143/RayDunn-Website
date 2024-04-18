@@ -80,67 +80,30 @@ section {
 --------------------------------------------------------------*/
 .about {
 
-  p{
-    text-align: center;
+
+
+.about-container{
+
+  word-wrap: break-word;
+text-align: center;
+margin-left: 12rem;
+margin-right: 12rem;
+
+  
+}
+
+
+@media (max-width: 760px){
+  .about-container{
+    margin-left: 2rem;
+margin-right: 2rem;
   }
+}
 
-  .content {
- 
 
-    h3 {
-      font-weight: 600;
-      font-size: 26px;
-    }
 
-    ul {
-      list-style: none;
-      padding: 0;
 
-      li {
-        padding-left: 28px;
-        position: relative;
-      }
 
-      li + li {
-        margin-top: 10px;
-      }
-
-      i {
-        position: absolute;
-        left: 0;
-        top: 2px;
-        font-size: 20px;
-        color: $primary;
-        line-height: 1;
-      }
-    }
-
-    p:last-child {
-      margin-bottom: 0;
- 
-    }
-
-    .btn-learn-more {
-      font-family: $font-secondary;
-      font-weight: 500;
-      font-size: 14px;
-      letter-spacing: 1px;
-      display: inline-block;
-      padding: 12px 32px;
-      border-radius: 4px;
-      transition: 0.3s;
-      line-height: 1;
-      color: $primary;
-      animation-delay: 0.8s;
-      margin-top: 6px;
-      border: 2px solid $primary;
-      &:hover {
-        background: $primary;
-        color: #fff;
-        text-decoration: none;
-      }
-    }
-  }
 }
 
 /*--------------------------------------------------------------
