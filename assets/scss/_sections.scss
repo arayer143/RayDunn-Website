@@ -55,8 +55,9 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  padding: 12px 0;
+
   text-align: center;
+ 
 
   img {
     max-width: 50%;
@@ -69,8 +70,12 @@ section {
       transform: scale(1.1);
     }
 
+  
+
     @media (max-width: 768px) {
       max-width: 40%;
+
+
     }
   }
 }
