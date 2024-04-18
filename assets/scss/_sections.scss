@@ -663,7 +663,7 @@ section {
 	position: relative;
 	-ms-touch-action: pan-Y;
 	touch-action: manipulation;
-	-moz-backface-visibility: hidden;
+
 	/* fix firefox animation glitch */
 }
 
@@ -837,7 +837,7 @@ section {
 	height: 10px;
 	background: transparent;
 	display: block;
-	-webkit-backface-visibility: visible;
+
 	transition: opacity 200ms ease;
 	border-radius: 5px;
 	border: 1px solid #888888;
@@ -897,9 +897,9 @@ section {
 }
 
 .review-carousel .item-preview {
-	min-width: 216px;
-	max-width: 216px;
-	height: 216px;
+	min-width: 116px;
+	max-width: 116px;
+	height: 116px;
 	margin-top: 30px;
 	background-color: #ffffff;
 	padding: 10px;
@@ -909,6 +909,9 @@ section {
 
 .review-carousel .item-preview img {
 	border-radius: 50%;
+  min-width: 98px;
+	max-width: 88px;
+	height: 89px;
 }
 
 .review-carousel .item-description {
