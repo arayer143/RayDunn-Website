@@ -431,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .star-field {
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 100%;
   background-color: #19101b; /* Dunkles Blau für den nächtlichen Himmel */
 }
 #hero .star {
