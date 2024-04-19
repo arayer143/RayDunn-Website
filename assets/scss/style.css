@@ -558,11 +558,11 @@ section {
 }
 .why-us .content h3 {
   font-weight: 400;
-  font-size: 34px;
+  font-size: 39px;
   color: rgb(56, 56, 56);
 }
 .why-us .content h4 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   margin-top: 5px;
 }
@@ -587,7 +587,7 @@ section {
 }
 .why-us .accordion-list li {
   padding: 20px;
-  background: #fff;
+  background: whitesmoke;
   border-radius: 4px;
 }
 .why-us .accordion-list a {
@@ -717,6 +717,8 @@ section {
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
   background: #fff;
+  max-width: 80%;
+  border-radius: 2rem;
 }
 .services .icon-box .icon {
   margin-bottom: 10px;
@@ -748,6 +750,68 @@ section {
 }
 .services .icon-box:hover h4 a {
   color: #d4af37;
+}
+.services .icon-box-bottom {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+  max-width: 80%;
+  border-radius: 2rem;
+  margin-left: 5rem;
+}
+.services .icon-box-bottom .icon {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.services .icon-box-bottom .icon i {
+  color: #d4af37;
+  font-size: 36px;
+  transition: 0.3s;
+}
+.services .icon-box-bottom h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+.services .icon-box-bottom h4 a {
+  color: rgb(56, 56, 56);
+  transition: ease-in-out 0.3s;
+}
+.services .icon-box-bottom p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.services .icon-box-bottom:hover {
+  transform: translateY(-10px);
+}
+.services .icon-box-bottom:hover h4 a {
+  color: #d4af37;
+}
+@media (max-width: 1200px) {
+  .services .icon-box {
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 770px) {
+  .services .icon-box-bottom {
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 450px) {
+  .services .icon-box {
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 1.7rem;
+  }
+  .services .icon-box-bottom {
+    margin-left: 1.7rem;
+  }
 }
 
 /*--------------------------------------------------------------
