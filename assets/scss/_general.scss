@@ -106,9 +106,9 @@ margin-top: 3rem;
 
 
 
-.rounded-social-buttons .fa-tiktok, .fa-facebook-f, .fa-linkedin, .fa-yelp, .fa-instagram {
+.rounded-social-buttons .fa-tiktok, .fa-facebook-f, .fa-linkedin, .fa-yelp, .fa-instagram  {
   font-size: 25px;
- margin-top: 7px;
+ margin-top: 9px;
  
 
 }
@@ -146,4 +146,20 @@ margin-top: 3rem;
 }
 
 
+.rounded-social-buttons .social-button.call  {
+  background: $primary;
+  
+}
+.rounded-social-buttons .social-button.call   i{
+  margin-top: .7rem;
+  
+}
+.rounded-social-buttons .social-button.email  {
+  background: $primary;
+  
+}
+.rounded-social-buttons .social-button.email i{
+  margin-top: .7rem;
+  
+}
 
