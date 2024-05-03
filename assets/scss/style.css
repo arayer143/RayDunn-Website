@@ -945,7 +945,7 @@ section {
   right: 10px;
 }
 .portfolio:hover .portfolio-img img {
-  transform: scale(1.15);
+  transform: scale(1);
 }
 .portfolio:hover .portfolio-info {
   opacity: 1;
