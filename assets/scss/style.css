@@ -1031,7 +1031,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Teest
+# Testimonials
 --------------------------------------------------------------*/
 .section-sm,
 .section-md,
@@ -1313,21 +1313,20 @@ section {
   }
 }
 .review-carousel .item-preview {
-  min-width: 116px;
-  max-width: 116px;
-  height: 116px;
-  margin-top: 30px;
-  background-color: #ffffff;
-  padding: 10px;
+  min-width: 296px;
+  max-width: 296px;
+  height: 236px;
+  background-color: #cac1c1;
+  padding: 20px;
   border-radius: 50%;
   align-self: center;
 }
 
-.review-carousel .item-preview img {
+.review-carousel .item-preview .testimonial-img {
   border-radius: 50%;
-  min-width: 98px;
-  max-width: 88px;
-  height: 89px;
+  min-width: 100%;
+  max-width: 100%;
+  align-self: center;
 }
 
 .review-carousel .item-description {
@@ -1344,6 +1343,11 @@ section {
   display: flex;
   flex-direction: column;
   position: relative;
+  color: #151515;
+}
+
+.review-carousel .item-description .item-subsection .item-subsection-title .testimional-a {
+  color: black;
 }
 
 @media (min-width: 1200px) {
