@@ -28,3 +28,36 @@
     }
   }
 }
+
+
+
+
+
+#services-header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  background-color: grey;
+
+  &.header-scrolled, &.header-inner-pages {
+    background: rgba(darken($secondary, 10), 0.9);
+  }
+
+  .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    a {
+      color: #fff;
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+}

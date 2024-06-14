@@ -161,6 +161,31 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
+#services-header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  background-color: grey;
+}
+#services-header.header-scrolled, #services-header.header-inner-pages {
+  background: rgba(31, 31, 31, 0.9);
+}
+#services-header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#services-header .logo a {
+  color: #fff;
+}
+#services-header .logo img {
+  max-height: 40px;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1874,6 +1899,32 @@ section {
   padding-right: 10px;
   color: #525252;
   content: "/";
+}
+
+/*--------------------------------------------------------------
+ # Breadcrumbs
+ --------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 140px 0 60px 0;
+  min-height: 30vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbs h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var("Poppins", sans-serif);
 }
 
 /*--------------------------------------------------------------
